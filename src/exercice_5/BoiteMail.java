@@ -12,6 +12,8 @@ public abstract class BoiteMail {
 	
 	public abstract Mail getMail(int i);
 	
+	public abstract Mail getMailCourant();
+	
 	public String getExpediteur() {
 		return expediteur;
 	}

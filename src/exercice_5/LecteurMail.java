@@ -4,7 +4,7 @@ public class LecteurMail {
 
 	private BoiteMail boiteMail;
 	private StrategieSuivant strategieSuivant;
-	private int courant;
+	//private int courant;
 	
 	public LecteurMail(BoiteMail boiteMail, StrategieSuivant strategieSuivant) {
 		this.boiteMail = boiteMail;
@@ -28,21 +28,9 @@ public class LecteurMail {
 	}
 	
 	public void lit(){
-		if (courant == 0)
-			System.out.println("Aucun mail.");
-		else {
-			Mail mail = boiteMail.getMail(courant - 1);
-			if (mail != null)
-				mail.affiche();
-		}
-	}
-	
-	public void setCourant(int courant) {
-		this.courant = courant;
-	}
-	
-	public int getCourant() {
-		return courant;
+		Mail mail = boiteMail.getMailCourant();
+		if (mail != null)
+			mail.affiche();
 	}
 	
 	public void suivant() { // passe au mail suivant (dans le tableau) 

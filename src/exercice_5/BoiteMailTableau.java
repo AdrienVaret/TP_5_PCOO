@@ -26,4 +26,9 @@ public class BoiteMailTableau extends BoiteMail{
 		}
 			
 	}
+
+	@Override
+	public Mail getMailCourant() {
+		return mails[courant];
+	}
 }
