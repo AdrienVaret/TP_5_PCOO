@@ -1,0 +1,7 @@
+1 - 
+
+Le constructeur est en privé car il n'y a qu'une seule instance de la classe ce n'est donc pas la peine d'en instancier d'autres et donc les autres classes n'en ont pas besoin.
+
+L'appel échouera car le constructeur est private. Il ne peut donc pas être utilisé dans les autres classes.
+
+Ca n'a aucun sens de donner des arguments au constructeur, car tous ses attributs sont static.
