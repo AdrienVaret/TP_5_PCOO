@@ -1,6 +1,6 @@
 package exercice_5;
 
-public class LecteurMailAttache extends LecteurMail{
+public class LecteurMailAttache extends VieuxLecteurMail{
 
 	public LecteurMailAttache(String expediteur) {
 		super(expediteur);

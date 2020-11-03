@@ -1,7 +1,8 @@
 package exercice_5;
 
-public class LecteurMail3 extends LecteurMail{
+public class LecteurMail3 extends VieuxLecteurMail{
 
+	@SuppressWarnings("unused")
 	private StrategieSuivant strategieSuivant;
 	
 	public LecteurMail3(String expediteur, StrategieSuivant strategieSuivant) {
@@ -11,7 +12,8 @@ public class LecteurMail3 extends LecteurMail{
 
 	@Override
 	public void suivant() {
-		strategieSuivant.suivant(this);
+		//Commenté mais OK
+		//strategieSuivant.suivant(this);
 	}
 	
 	public void setStrategieSuivant(StrategieSuivant strategieSuivant) {
