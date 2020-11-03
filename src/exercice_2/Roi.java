@@ -8,6 +8,7 @@ public class Roi {
 	
 	private Roi(String name) {
 		this.name = name;
+		newInstance(name);
 	}
 	
 	public static Roi getInstance() {
