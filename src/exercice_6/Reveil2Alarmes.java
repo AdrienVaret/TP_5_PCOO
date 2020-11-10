@@ -14,8 +14,5 @@ public class Reveil2Alarmes implements Observateur{
 	public void miseAJour(HorlogeReveil h) {
 		reveil1.miseAJour(h);
 		reveil2.miseAJour(h);
-	}
-
-	
-	
+	}	
 }
