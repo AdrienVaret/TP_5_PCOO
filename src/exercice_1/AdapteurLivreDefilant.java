@@ -12,7 +12,7 @@ public class AdapteurLivreDefilant implements TexteDefilant{
 	
 	public AdapteurLivreDefilant(Livre livre) {
 		this.livre = livre;
-		page = livre.getPages(0);
+		page = livre.getPage(0);
 	}
 	
 	@Override
@@ -28,7 +28,7 @@ public class AdapteurLivreDefilant implements TexteDefilant{
 				//Nouvelle page
 				indexLigne = 0;
 				indexPage ++;
-				page = livre.getPages(indexPage);
+				page = livre.getPage(indexPage);
 				if (page == null) {
 					System.out.println("Vous êtes à la fin du livre.");
 					fin = true;

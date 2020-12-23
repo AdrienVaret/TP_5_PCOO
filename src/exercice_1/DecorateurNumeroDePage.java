@@ -2,8 +2,11 @@ package exercice_1;
 
 public class DecorateurNumeroDePage extends Livre{
 
-	public DecorateurNumeroDePage(String titre, Page[] pages) {
-		super(titre, pages);
+	private Livre livre;
+
+	public DecorateurNumeroDePage(Livre livre) {
+        super(livre.getTitre(), livre.getPages());
+		this.livre = livre;
 	}
 	
 	@Override

@@ -38,7 +38,7 @@ public class Livre {
 		}
 	}
 	
-	public Page getPages(int i) {
+	public Page getPage(int i) {
 		
 		try {
 			return pages[i];
@@ -54,6 +54,10 @@ public class Livre {
 	
 	public int getNbPages() {
 		return nbPages;
+	}
+	
+	public Page[] getPages() {
+		return pages;
 	}
 
 }
