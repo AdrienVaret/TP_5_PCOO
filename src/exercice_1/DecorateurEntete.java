@@ -11,6 +11,6 @@ public class DecorateurEntete extends Livre{
 	@Override
 	public void affichePage(int page) {
 		System.out.println(getTitre());
-		super.affichePage(page);
+		livre.affichePage(page);
 	}
 }

@@ -9,6 +9,8 @@ public class Exercice1Test {
 		Livre livreE = new DecorateurEntete(livre); // heritage dynamique
 		Livre livreN = new DecorateurNumeroDePage(livre); // heritage dynamique
 		Livre livreEN = new DecorateurEntete(new DecorateurNumeroDePage(livre)); // heritage multiple sans creer une troisieme classe
+		//Livre livreEN = new DecorateurNumeroDePage(new DecorateurEntete(livre)); // heritage multiple sans creer une troisieme classe
 		livreEN.affichePage(0);
+		livreEN.affichePage(1);
 	}
 }

@@ -11,7 +11,7 @@ public class DecorateurNumeroDePage extends Livre{
 	
 	@Override
 	public void affichePage(int page) {
-		super.affichePage(page);
+		livre.affichePage(page);
 		System.out.println("(" + (page + 1) + ")");
 	}
 
